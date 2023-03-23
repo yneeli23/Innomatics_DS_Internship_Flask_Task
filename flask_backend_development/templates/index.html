@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<h1>Welcome to the Regex Page</h1>
+<form action="{{url_for('regex')}}" method="post">
+    <label for="test_str"> Test String</label>
+    <input id="test_str" name="test_str" placeholder="Enter text" type="text">
+    <br>
+    <label for="fname">Regular Expression</label>
+    <input id="pattern" name="pattern" placeholder="Enter regex" type="text">
+    <br>
+    <button class="button">Submit</button>
+    <input type="reset">
+</form>
+
+{% endblock %}

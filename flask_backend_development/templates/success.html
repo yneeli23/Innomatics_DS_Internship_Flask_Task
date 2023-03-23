@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<h1>The matched ones: </h1>
+{% if matched %}
+<ol>
+    {% for match in matched %}
+    <li>{{ match }}</li>
+    {% endfor %}
+</ol>
+{% else %}
+<h2>No matches found</h2>
+{% endif %}
+
+{% endblock %}
